@@ -8,7 +8,7 @@ Key Features Include:
   - DOM refreshes automatically
   - Ability to add descriptions to uploaded photos
 
-#Instructions
+# Instructions
  1. Clone down repo
  2. Bundle Install
  3. 'be rake db:drop' && 'be rake db:create' && 'be rake db:migrate' (or 'be rake db:reset')
