@@ -45,8 +45,8 @@ class App extends React.Component {
 
   render() {
     const profileInfo = {
-      photoUrl: "https://avatars1.githubusercontent.com/u/25166893?v=4&s=400",
-      bio: "I'm Rico and I am Suave.. :) #Bro"
+      photoUrl: "https://avatars3.githubusercontent.com/u/25589910?v=4&s=400",
+      bio: "Hi, my name is Adam Weil! This is a small project I worked on to get more familiarized with React and Paperclip!"
     }
     return(
       <div id="container">
