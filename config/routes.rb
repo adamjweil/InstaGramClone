@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   post '/photos' =>'photos#create'
   get '/photos' => 'photos#index'
 
+  get '/profile' => 'static#profile'
+  get '/home' => 'static#index'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'static#index'
 end

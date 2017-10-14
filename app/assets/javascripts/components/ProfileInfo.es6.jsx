@@ -5,13 +5,17 @@ class ProfileInfo extends React.Component {
 
     return(
       <div className="profile-info">
-        <span className="profile">
-          <img className="avatar" src={photoUrl} alt=""/>
-            <div>
-              <h3>@AdamWeil</h3>
+        <div className="profileHeader">
+          <div className="avatarColumn">
+            <img className="avatar" src={photoUrl} alt=""/>
+            <h3>@AdamWeil</h3>
+          </div>
+            <div className="avatarColumn">
+              <div className="bio">
                 {bio}
               </div>
-        </span>
+            </div>
+        </div>
         <section id="follow-details">
 
           <FollowDetails followers={33} following={122} photoCount={312}/>

@@ -20,6 +20,19 @@ end
 10.times do
   Photo.create(photo: "https://static.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
 end
+10.times do
+  Photo.create(photo: "http://all4desktop.com/data_images/original/4237675-images.jpg", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+end
+
+1.times do
+  Photo.create(photo: "https://www.facebook.com/photo.php?fbid=10207647213118002&set=a.1373619700160.2045767.1221810035&type=3&theater", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+end
+1.times do
+  Photo.create(photo: "https://www.facebook.com/photo.php?fbid=10200790640267966&set=a.1373619700160.2045767.1221810035&type=3&theater", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+end
+1.times do
+  Photo.create(photo: "https://www.facebook.com/photo.php?fbid=10208770814562987&set=t.1221810035&type=3&theater", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+end
 
 10.times do
   Photo.create(photo:  "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
