@@ -5,7 +5,7 @@ class Photo extends React.Component {
     return(
       <div className="photo">
         <img src={photo.photo_url} />
-        <h6>Description:</h6><p> {blurb}</p>
+        <p>Description: {blurb}</p>
       </div>
     )
   }

@@ -14,3 +14,5 @@ Key Features Include:
  3. 'be rake db:drop' && 'be rake db:create' && 'be rake db:migrate' (or 'be rake db:reset')
  4. 'be rake db:seed'
  5. 'rails s' to start server
+
+# Heroku
