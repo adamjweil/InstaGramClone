@@ -24,7 +24,7 @@ class PhotosController < ApplicationController
     photo.set_image(image_type, encoded_string)
     puts params.keys
     photo.blurb = params[:blurb]
-    # photo.username = params[:username]
+    photo.username = params[:username]
     photo.save
     render json: photo
   end
