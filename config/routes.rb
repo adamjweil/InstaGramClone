@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/photos/:id' => 'photos#show'
   post '/photos' =>'photos#create'
   get '/photos' => 'photos#index'
+  get '/adamjweil' => 'photos#user_photos'
 
   get '/profile' => 'static#profile'
   get '/home' => 'static#index'

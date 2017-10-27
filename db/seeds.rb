@@ -13,37 +13,60 @@ Like.delete_all
 # for testing purposes
 User.create(username: "username", email: "email@email.com", password: "password", avatar_url: "https://static.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg")
 
-5.times do
-  User.create(username: Faker::Internet.user_name, email: Faker::Internet.safe_email, password: "password")
-end
+# 5.times do
+#   User.create(username: Faker::Internet.user_name, email: Faker::Internet.safe_email, password: "password")
+# end
 
-10.times do
-  Photo.create(photo: "https://static.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+1.times do
+  User.create(username: "@JessFTW", email: Faker::Internet.safe_email, password: "password")
 end
-10.times do
-  Photo.create(photo: "http://all4desktop.com/data_images/original/4237675-images.jpg", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+1.times do
+  User.create(username: "@AdamJWeil", email: Faker::Internet.safe_email, password: "password")
+end
+1.times do
+  User.create(username: "@BeachMaster", email: Faker::Internet.safe_email, password: "password")
+end
+1.times do
+  User.create(username: "@Foodie", email: Faker::Internet.safe_email, password: "password")
+end
+1.times do
+  User.create(username: "@ILoveFood", email: Faker::Internet.safe_email, password: "password")
 end
 
 1.times do
-  Photo.create(photo: "https://www.facebook.com/photo.php?fbid=10207647213118002&set=a.1373619700160.2045767.1221810035&type=3&theater", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+  Photo.create(photo: "http://travel.home.sndimg.com/content/dam/images/travel/fullset/2014/12/3/top-10-caribbean-beaches-eagle-beach-aruba.jpg.rend.hgtvcom.966.725.suffix/1491584555480.jpeg", username: "@BeachMaster", blurb: "Wow!")
 end
+
 1.times do
-  Photo.create(photo: "https://www.facebook.com/photo.php?fbid=10200790640267966&set=a.1373619700160.2045767.1221810035&type=3&theater", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+  Photo.create(photo: "https://media.cntraveler.com/photos/590372b6a71e701c036ce19c/master/pass/best-mexico-beaches-playa-de-amor-GettyImages-648939118.jpg", username: "@JessFTW", blurb: "#blessed")
 end
+
 1.times do
-  Photo.create(photo: "https://www.facebook.com/photo.php?fbid=10208770814562987&set=t.1221810035&type=3&theater", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+  Photo.create(photo: "https://media.gq.com/photos/594ee1bf92ae3c70e00797af/master/w_800/best-beaches-Railay-Beach-Thailand.jpg", username: "@BeachMaster", blurb: "Beach Day!")
 end
 
-10.times do
-  Photo.create(photo:  "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+1.times do
+  Photo.create(photo: "https://s-i.huffpost.com/gen/4451422/images/o-FOOD-facebook.jpg", username: "@Foodie", blurb: "Lunch!")
 end
 
-10.times do
-  Photo.create(photo:  "https://static.pexels.com/photos/96938/pexels-photo-96938.jpeg", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+1.times do
+  Photo.create(photo: "http://travel.home.sndimg.com/content/dam/images/travel/fullset/2014/07/20/32/food-paradise-102-ss-001.rend.hgtvcom.966.544.suffix/1491584380240.jpeg", username: "@BeachMaster", blurb: "Footlongs all day!")
 end
 
-10.times do
-  Photo.create(photo:  "https://static.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg", user_id: User.all.sample.id, blurb: Faker::ChuckNorris.fact)
+1.times do
+  Photo.create(photo: "http://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/6/18/0/YW0304H_Pulled-Pork-Sandwich_s4x3.jpg.rend.hgtvcom.966.725.suffix/1387299384530.jpeg", username: "@Foodie", blurb: "Sliderssss")
+end
+
+1.times do
+  Photo.create(photo: "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi", username: "@ILoveFood", blurb: "Who are you?")
+end
+
+1.times do
+  Photo.create(photo: "https://static.boredpanda.com/blog/wp-content/uploads/2016/01/bear-dogs-310__605.jpg", username: "@AdamJWeil", blurb: "Panda")
+end
+
+1.times do
+  Photo.create(photo: "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/55/8x/p0558xqm.jpg", username: "@AdamJWeil", blurb: "Having Fun!")
 end
 
 100.times do

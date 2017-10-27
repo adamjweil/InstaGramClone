@@ -6,6 +6,11 @@ class PhotosController < ApplicationController
     render json: @photos
   end
 
+  def user_photos
+    @photos = Photo.where(username: '@AdamJWeil').order('created_at desc')
+    render json: @photos
+  end
+
   def show
     photo = Photo.find_by(id: params[:id])
     render json: photo
@@ -19,12 +24,13 @@ class PhotosController < ApplicationController
     photo.set_image(image_type, encoded_string)
     puts params.keys
     photo.blurb = params[:blurb]
+    photo.username = params[:username]
     photo.save
     render json: photo
   end
 
   private
   def photo_params
-    params.require(:photo).permit(:user_id, :photo, :blurb)
+    params.require(:photo).permit(:username, :photo, :blurb)
   end
 end
