@@ -69,10 +69,10 @@ end
   Photo.create(photo: "http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/55/8x/p0558xqm.jpg", username: "@AdamJWeil", blurb: "Having Fun!")
 end
 
-100.times do
-  Comment.create(user_id: User.all.sample.id, photo_id: Photo.all.sample.id, content: Faker::ChuckNorris.fact)
-end
-
-500.times do
-  Like.create(user_id: User.all.sample.id, photo_id: Photo.all.sample.id)
-end
+# 100.times do
+#   Comment.create(user_id: User.all.sample.id, photo_id: Photo.all.sample.id, content: Faker::ChuckNorris.fact)
+# end
+#
+# 500.times do
+#   Like.create(user_id: User.all.sample.id, photo_id: Photo.all.sample.id)
+# end

@@ -23,7 +23,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'rack-cors'
 gem 'pry'
 gem 'pry-rails'
-gem 'carrierwave', '~> 1.0'
+# gem 'carrierwave', '~> 1.0'
 # gem 'byebug'
 
 # Use CoffeeScript for .coffee assets and views
